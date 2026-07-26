@@ -8,11 +8,16 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Welcome to the Home Page!";
+
             return View();
         }
 
         public IActionResult Privacy()
         {
+
+            ViewData["Message"] = "Your privacy is important to us.";
+
             return View();
         }
 
